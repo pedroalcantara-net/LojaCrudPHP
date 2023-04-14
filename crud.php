@@ -53,6 +53,19 @@ function readCarrinho($numero) {
     return $carrinhos[0];
 }
 
+function readProdutoCarrinho($codigo,$numero){
+   global $db;
+    $stmt = $db->prepare('SELECT * FROM ProdutoCarrinho WHERE numero_carrinho = :numero and codigo_produto = :codigo');
+    $stmt->bindValue(':numero',$numero,SQLITE3_INTEGER);
+    $stmt->bindValue(':codigo',$codigo,SQLITE3_INTEGER);
+    $result = $stmt->execute();
+    $produtoCarrinho = array();
+    while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+        $produtoCarrinho[] = $row;
+    }
+    return $produtoCarrinho[0]; 
+}
+
 // Função para buscar todos os produtos
 function readProdutos() {
     global $db;

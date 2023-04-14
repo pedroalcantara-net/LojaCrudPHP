@@ -1,0 +1,142 @@
+body {
+  background-color: #F3F6FA;
+  font-family: Arial, sans-serif;
+  color: #4F4F4F;
+}
+
+h1 {
+  font-size: 36px;
+  color: #283E4A;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #283E4A;
+  margin-top: 50px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #C2D4E2;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+thead th {
+  background-color: #0077C2;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid #C2D4E2;
+}
+
+tbody td {
+  border-bottom: 1px solid #C2D4E2;
+  padding: 10px;
+}
+
+tbody td:first-child {
+  font-weight: bold;
+}
+
+form {
+  display: inline-block;
+}
+
+button {
+  background-color: #0077C2;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #003E7E;
+}
+
+button:active {
+  background-color: #002752;
+}
+
+button:focus {
+  outline: none;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"]{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 200px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background-color: #0077C2;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #003E7E;
+}
+
+input[type="submit"]:active {
+  background-color: #002752;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+a {
+  color: #283E4A;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin-top: 20px;
+}
+
+a:hover {
+  border-bottom: 2px solid #0077C2;
+  color: #0077C2;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  border-bottom: 2px solid #003E7E;
+  color: #003E7E;
+}
